@@ -113,4 +113,14 @@
         app:layout_constraintEnd_toEndOf="@+id/regBtn"
         app:layout_constraintStart_toStartOf="@+id/regBtn"
         app:layout_constraintTop_toTopOf="@+id/regBtn" />
+
+    <ImageView
+        android:id="@+id/pick_photo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+        tools:layout_editor_absoluteY="127dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
