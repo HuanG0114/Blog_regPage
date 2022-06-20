@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.RegisterActivity"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".Activities.RegisterActivity">
 
     <ImageView
         android:id="@+id/regUserPhoto"
@@ -28,13 +28,13 @@
         app:layout_constraintGuide_begin="356dp" />
 
     <EditText
-        android:background="@drawable/reg_editext_style"
-        android:hint="姓名"
         android:id="@+id/regName"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
+        android:background="@drawable/reg_editext_style"
         android:ems="10"
+        android:hint="姓名"
         android:inputType="textPersonName"
 
         app:layout_constraintBottom_toTopOf="@+id/regMail"
@@ -44,28 +44,29 @@
         app:layout_constraintVertical_bias="0.917" />
 
     <EditText
-        android:background="@drawable/reg_editext_style"
-        android:hint="信箱"
         android:id="@+id/regMail"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="411dp"
+        android:background="@drawable/reg_editext_style"
         android:ems="10"
+        android:hint="信箱"
         android:inputType="textPersonName"
 
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pick_photo" />
 
     <EditText
-        android:background="@drawable/reg_editext_style"
-        android:hint="密碼"
         android:id="@+id/regPassword"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
+        android:background="@drawable/reg_editext_style"
         android:ems="10"
+        android:hint="密碼"
         android:inputType="textPassword"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,13 +75,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <EditText
-        android:background="@drawable/reg_editext_style"
-        android:hint="請再輸入密碼"
         android:id="@+id/regPassword2"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/reg_editext_style"
         android:ems="10"
+        android:hint="請再輸入密碼"
         android:inputType="textPassword"
 
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,12 +116,16 @@
         app:layout_constraintTop_toTopOf="@+id/regBtn" />
 
     <ImageView
+
         android:id="@+id/pick_photo"
         android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/regMail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/ic_baseline_photo_camera_24"
-        tools:layout_editor_absoluteY="127dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
